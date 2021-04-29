@@ -1,0 +1,48 @@
+
+<!DOCTYPE>
+<html>
+<head>
+<title>Hotel Sign In</title>
+<link rel="stylesheet" type="text/css" href="signin.css"/>
+<script type="text/javascript">
+function clicked() {
+    alert('Successfully submitted');
+}
+
+    $("#formname").resetForm();
+</script>
+</head>
+<body>
+<div id="holder"><img src="hotel-elite-front.jfif" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+                <li><a href="homepage.html">Enter </a></li>
+
+    	</ul>
+    </div><!--header -->
+<div id="signup">
+<br>
+	<h1><i><b> Lets get in, quickly ;) </b></i></h1>
+  		<div id="p"><br><br><br>
+	<form action="signin.php" method="post">
+&nbsp;&nbsp;&nbsp;
+<label for="number">Username :</label>&nbsp;&nbsp;&nbsp;
+            <input id="" name="username" placeholder="Name" required="" type="text"> <br><br>
+&nbsp;&nbsp;&nbsp;
+<label for="number">Password :</label> &nbsp;&nbsp;&nbsp;
+            <input id="" name="password" placeholder="password" required="" type="password"> <br><br>
+&nbsp;&nbsp;&nbsp;
+Sign up :
+      	<input type="radio" name="signup" value="yes">Yes
+   		<input type="radio" name="signup" value="no">No
+&nbsp;&nbsp;&nbsp;
+  <p>(If already a user, click No)</p><br>
+&nbsp;&nbsp;&nbsp;
+<input type="submit" name="submit" value="Ok"/>
+</form>
+        </div><!--p-->
+</div><!--login-->
+</div><!--holder-->
+</body>
+</html>
