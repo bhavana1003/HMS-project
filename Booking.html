@@ -1,0 +1,112 @@
+
+<!DOCTYPE>
+<html>
+<head>
+<title>Booking</title>
+<link rel="stylesheet" type="text/css" href="Bookingcss.css"/>
+<link rel="stylesheet" type="text/css" href="dhtmlxCalendar.css"/>
+	
+<script src="dhtmlxcalendar.js"></script>
+	
+<style>
+		#calendar,
+		#calendar2,
+		#calendar3,
+		#calendar4,
+		 	{
+			border: 1px solid #909090;
+			font-family: Tahoma;
+			font-size: 12px;
+			}
+</style>
+	<script>
+		var myCalendar;
+		function doOnLoad() 
+			{
+			myCalendar = new dhtmlXCalendarObject(["calendar","calendar2","calendar3","calendar4",]);
+			}
+	</script>
+</head>
+<body onload="doOnLoad();">
+<div id="holder"><img src="hotel-elite-front.jfif" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="loginpage.html">Login</a></li>
+        <li><a href="Homepage.html">Home</a></li>
+    	</ul>
+    </div><!--header -->
+	<div id="ab">
+    <div id="check">
+    	<br>
+	<form action="feedback.php" method="post">
+		<div style="position:relative;height:80px;">
+		<label for="in">Name : </label> &nbsp;&nbsp;&nbsp;&nbsp;
+            		<input id="name" name="Name" placeholder="Full Name" required="" type="text"> <br><br><br>
+		
+		<label for="in">Room No : </label> &nbsp;&nbsp;
+            		<input id="number" name="Roomno" placeholder="Number" required="" type="text"> <br><br>
+		
+		</div>
+		<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+</div><!--check -->
+   &nbsp;
+  <br>
+    <div id="fd"> 
+				
+				<label for="in">Feedback</label> 
+					<input id="fd" name="Feedback" placeholder="Type message" required=""> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" name="submit" value="submit" />
+				</form>
+		</div><!--fd-->
+	</div><!--ab-->
+<div id="book">
+<h1>Booking</h1>
+	<div id="a1">
+    <p>&nbsp;</p>
+    
+    <form action="book.php" method="post">
+		 <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="name" name="name" placeholder="Full Name" required="" tabindex="1" type="text"><br><br>
+		
+		<label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="email" name="email" placeholder="Email" required="" type="email"><br><br>
+		
+		<label for="mobile">Mobile No:</label> &nbsp;
+            		<input id="phone" name="mobile" placeholder="Number" required="" type="text"> <br><br>
+		
+		<div style="position:relative;height:80px;">
+		
+		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            		<input id="calendar3" name="checkin" placeholder="2021-04-10" required="" type="date"> <br><br>
+		
+		<label for="out">Check out:</label> &nbsp;&nbsp;
+            		<input id="calendar4" name="checkout" placeholder="2021-04-10" required="" type="date"> <br><br>
+		
+		</div>
+		Room Type:
+			<select name="room">
+				<option value="A/C">A/C</option>
+				<option value="Non-A/C">Non-A/C</option>
+			</select>
+			<select  name="type">
+				<option value="single">Single</option>
+				<option value="double">Double</option>
+				<option value="three">Three</option>
+			</select>
+		<br/><br/><br/>
+<a href="payment.html"><input type="submit" name="submit" value="Book"/></a>
+<input type="reset" name="reset" value="Reset" />
+</form>
+    </div><!--a1-->
+</div><!--book--> 
+</div><!--holder-->
+</body>
+</html>

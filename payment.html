@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Payment</title>
+<link rel="stylesheet" type="text/css" href="payment.css"/>
+</head>
+<body>
+<div id="holder"><img src="hotel-elite-front.jfif" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+                   <li><a href="contacts.html">Contact</a></li>
+                   <li><a href="payment.html">Payment</a></li>
+                   <li><a href="Booking.html">Booking</a></li>
+                   <li><a href="loginpage.html">Login</a></li>
+                   <li><a href="Homepage.html">Home</a></li>
+
+    	</ul>
+    </div><!--header -->
+<div id="payment">
+	<h1>Payment Mode</h1>
+	<div id="a2">
+    <p>&nbsp;</p>
+    
+    <form action="payment.php" method="post">
+    <label>Card Type:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <select name="type">
+                                <option value="debit">Debit Card</option>
+        						<option value="credit">Credit Card</option>
+                                </select>
+     <br><br>
+     <label>Expiry Date:</label>&nbsp;&nbsp;&nbsp;
+     		<select name="month">
+    				<option>Jan</option>
+        			               <option>Feb</option>
+				<option>Mar</option>
+                                                                <option>Apr</option>
+				<option>May</option>
+				<option>Jun</option>
+				<option>July</option>
+				<option>Aug</option>
+				<option>Sep</option>
+				<option>Oct</option>
+				<option>Nov</option>	
+				<option>Dec</option>
+    		</select>
+		<select name="year">
+  
+                <option>2021</option><option>2022</option>
+                <option>2023</option><option>2024</option>
+                
+    		</select>
+        <br><br>
+	<label for="cardno">Card No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="cardno" name="num" placeholder="Number" required="" type="text"><br><br>
+    
+	<label for="name">Card Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="name" name="name" placeholder="Name" required="" type="text"><br><br>
+    
+	<label for="password">CVV :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="password" name="cvv" placeholder="Number" required="" type="password"><br><br><br><br>
+
+		<input type="submit" name="submit" value="Ok" />
+		<input type="reset" name="reset" value="Reset" />
+   </form>
+    </div><!--a2-->
+</div><!--payment-->
+</div><!--holder-->
+</body>
+</html>
